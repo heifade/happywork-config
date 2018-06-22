@@ -1,6 +1,6 @@
 {
   "name": "happywork-config",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta3",
   "description": "",
   "typings": "./src/index.ts",
   "scripts": {
