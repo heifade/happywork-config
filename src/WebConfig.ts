@@ -1,6 +1,8 @@
 export interface Html {
+  filename: string;
+  template: string;
   title: string;
-  url: string;
+  chunks?: any;
 }
 
 export interface Proxy {
