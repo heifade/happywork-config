@@ -19,4 +19,7 @@ export interface WebConfig {
 
   // 转发
   proxy?: Proxy;
+
+  // 是否生成sourceMap
+  sourceMap?: boolean;
 }
