@@ -22,4 +22,7 @@ export interface WebConfig {
 
   // 是否生成sourceMap
   sourceMap?: boolean;
+
+  // 是否进行压缩
+  minimize?: boolean;
 }
