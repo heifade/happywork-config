@@ -25,4 +25,7 @@ export interface WebConfig {
 
   // 是否进行压缩
   minimize?: boolean;
+
+  // 是否移除 console.log
+  removeConsoleLog?: boolean;
 }
