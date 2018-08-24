@@ -19,13 +19,4 @@ export interface WebConfig {
 
   // 转发
   proxy?: Proxy;
-
-  // 是否生成sourceMap
-  sourceMap?: boolean;
-
-  // 是否进行压缩
-  minimize?: boolean;
-
-  // 是否移除 console.log
-  removeConsoleLog?: boolean;
 }
