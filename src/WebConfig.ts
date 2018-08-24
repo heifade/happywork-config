@@ -1,33 +1,17 @@
-export interface Html {
-  filename: string;
-  template: string;
-  title: string;
-  chunks?: any;
-}
-
-export interface Proxy {
-  [key: string]: string;
-}
-
-export interface Build {
-  // 是否生成sourceMap
-  sourceMap?: boolean;
-  // 是否压缩
-  minimize?: boolean;
-  // 是否移除console
-  dropConsole?: boolean;
-}
+import { Build } from "./interface/Build";
+import { Html } from "./interface/Html";
+import { Development } from "./interface/Development";
 
 export interface WebConfig {
   entry: {
     [name: string]: string;
   };
-  // 端口号
-  port?: number;
-  html?: Html[];
 
-  // 转发
-  proxy?: Proxy;
+  // 开发
+  development?: Development;
+
+  // 页面
+  html?: Html[];
 
   // 构建
   build?: Build;
