@@ -3,16 +3,17 @@ import { Html } from "./interface/Html";
 import { Development } from "./interface/Development";
 
 export interface WebConfig {
+  /** 入口配置 */
   entry: {
     [name: string]: string;
   };
 
-  // 开发
+  /** 开发模式配置 */
   development?: Development;
 
-  // 页面
+  /** 页面 */
   html?: Html[];
 
-  // 构建
+  /** 构建时的配置 */
   build?: Build;
 }
