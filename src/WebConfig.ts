@@ -9,6 +9,15 @@ export interface Proxy {
   [key: string]: string;
 }
 
+export interface Build {
+  // 是否生成sourceMap
+  sourceMap?: boolean;
+  // 是否压缩
+  minimize?: boolean;
+  // 是否移除console
+  dropConsole?: boolean;
+}
+
 export interface WebConfig {
   entry: {
     [name: string]: string;
@@ -19,4 +28,7 @@ export interface WebConfig {
 
   // 转发
   proxy?: Proxy;
+
+  // 构建
+  build?: Build;
 }
