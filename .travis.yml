@@ -3,7 +3,7 @@ sudo: enabled
 node_js:
   - "10"
 script:
-  - npm run build
+  
 after_script:
 
 
