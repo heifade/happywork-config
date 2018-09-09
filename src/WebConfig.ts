@@ -11,6 +11,11 @@ export interface WebConfig {
   /** 开发模式配置 */
   development?: Development;
 
+  /** 别名 */
+  alias?: {
+    [key: string]: string;
+  };
+
   /** 页面 */
   html?: Html[];
 
